@@ -1,0 +1,38 @@
+<html>
+<body>
+<div style="color:red;font-size:50px;">
+<script language="JavaScript">
+var liczba1=prompt("1 day=","");
+var liczba2=prompt("1 hours=","");
+var liczba3=prompt("2 day=","");
+var liczba4=prompt("2 hours=","");
+var ile_secund_vychkin;
+var D1_vyc=parseFloat(liczba1);
+var G1_vyc=parseFloat(liczba2);
+var D2_vyc=parseFloat(liczba3);
+var G2_vyc=parseFloat(liczba4);
+if(isNaN(D1_vyc)||isNaN(D2_vyc)||isNaN(G1_vyc)||isNaN(G2_vyc))
+{
+document.write("zła liczba!");
+}
+else
+{
+	first_Seconds = (D1_vyc*24+G1_vyc)*3600;
+	second_Seconds = (D2_vyc*24+G2_vyc)*3600;
+
+	ile_secund_vyc = first_Seconds-second_Seconds;
+	
+	if(ile_secund_vyc<0)
+	{
+	ile_secund_vychkin*=-1;
+	}
+	document.write("1 day: " + D1_vyc +"<br>");
+	document.write("1 hours: " + G1_vyc +"<br>");
+	document.write("2 day: " + D2_vyc +"<br>");
+	document.write("2 hours: " + G2_vyc +"<br>");
+	document.write("Liczba sekund: " + ile_secund_vychkin+"s");
+}
+</script>
+</div>
+</body>
+</html>
