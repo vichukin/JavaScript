@@ -1,0 +1,38 @@
+<html>
+<head >
+</head>
+<body>
+    <h3>Index</h3>
+<textarea readonly="true" rows="15" cols="130">
+<html>
+  <body>
+    <div style="color:red;font-size:50px;">
+      <script language="JavaScript">
+        var liczba1=prompt("1 day=","");
+        var liczba2=prompt("2 day=","");
+        var ile_secund_vychkin;
+        var a_vychkin=parseFloat(liczba1);
+        var b_vychkin=parseFloat(liczba2);
+        if(isNaN(a_vychkin)||isNaN(b_vychkin))
+        {
+          document.write("zła liczba!");
+        }
+        else
+        {
+        	ile_secund_vychkin = (a_vychkin-b_vychkin)*24*3600;
+        	
+        	if(ile_secund_vychkin<0)
+        	{
+        	ile_secund_vychkin*=-1;
+        	}
+        	document.write("1 day: " + a_vychkin +"<br>");
+        	document.write("2 day: " + b_vychkin +"<br>");
+        	document.write("Liczba sekund: " + ile_secund_vychkin+"s");
+        }
+      </script>
+    </div>
+  </body>
+</html>
+</textarea>
+  </body>
+</html>
