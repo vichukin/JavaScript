@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Rodzaje okienek</h3>
+    <ul>
+        <li>Okienko <b>alert</b> – wyświetlająca okienko dialogowe z informacją i przyciskiem OK</li>
+        <li>Okienko <b>prompt</b> – generująca okno, w którym użytkownik może wpisać wartość, zwracaną 
+            następnie do programu. </li>
+        <li>Okienko <b>confirm</b> służy do tego, aby użytkownik coś potwierdził (stąd nazwa confirm).</li>
+    </ul>
+    <h3>Konwersji liczb.</h3>
+    <p>Wczytanie zmiennej z użyciem <b>prompt</b> wykonywane jest jako ciąg znaków dlatego konieczna jest 
+        konwersji z ciągu znaków na wartości liczbowe aby wykonywac obliczenia.
+        </p>
+    <ol>
+        <li><u>parseFloat(zmienna)</u> - konwersja zmiennej do typu float</li>
+        <li><u>parseInt(zmienna)</u> - konwersja zmiennej do typu int (liczbowego)</li>
+        <li><u>toString(zmienna)</u> - konwersja zmiennej do typu łańcuchowego</li>
+    </ol>
+    <h3>Typy zmiennych</h3>
+    <ol>
+        <li>Number &rarr; Typ liczbowy</li>
+        <ul>
+            <li>zmienna całkowite</li>
+            <li>zmiennoprzecinkowe</li>
+        </ul>
+        <li>String &rarr; Typ tekstowy</li>
+        <li>Boolea &rarr; Typ logiczny</li>
+        <li>Null &rarr; Pusta zawartość</li>
+        <li>Undefined &rarr; Typ niezidentyfikowany</li>
+        <li>Object &rarr; Obiekt</li>
+    </ol>
+    <h3> Przy nadawaniu nazw zmiennym należy przestrzegać pewnych zasad:
+    </h3>
+    <ol>
+        <li> Nazwa zmiennej musi się zaczynać od litery, znaku "$" lub "_", może zawierać tylko litery (bez 
+            polskich znaków), cyfry oraz "$" i "_".<br>
+            <u>Poprawne nazwy zmiennych</u>: zmienna1, $wynik, _rozmiar, wynik1, Rekord, $_gracz<br>
+            <u>Błędne nazwy zmiennych</u>: 1zmienna, wynik gry, wysokosc&szerokosc, wynik.rekord, &gracz, 
+            wysokość, imie+nazwisko.</li>
+        <li>Wielkość liter ma znaczenie.<br><u>Rekord i rekord</u> to dwie różne zmienne! Jest to bardzo częsta przyczyna błędów w kodzie 
+            początkujących programistów.
+            
+        </li>
+        <li>Należy nie używać słów kluczowych JavaScript jako nazw zmiennych.</li>
+    </ol>
+</body>
+</html>
