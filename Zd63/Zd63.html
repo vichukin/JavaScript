@@ -9,38 +9,29 @@
     <script language="JavaScript">
         function check() 
         {
-            alert("I am an alert box!");
-            var x = getElementById("txt").value;
-            alert("my x"+x);
-            var a = parseFloat(x);
-            document.write("czytana liczba x=" + a + "<br>");
-            if (a !== null) 
+            let x = document.getElementById("txt").value;
+            x = x.toLowerCase();
+            if (x==1 || x=="czerwony") 
             {
-                if (a === 1) 
-                {
-                    alert("wczytałeś kolor czerwony <br>");
-                }
+                document.write("<font color=red size=7>wczytałeś kolor czerwony</font> ");
             }
-            else {
-                x = x.toLowerCase();
-                if (x === "czerwony") 
-                {
-                    alert("wczytałeś kolor czerwony <br>");
-                }
-                else if (x === "niebieski") 
-                {
-                    alert("wczytałeś kolor niebieski <br>");
-                }
+            else if (x==2|| x=="niebieski")
+            {
+                document.write("<font color=blue size=1>wczytałeś kolor niebieski</font> ");
+            }
+            else
+            {
+                alert("Uknown choice!");
             }
         }
     </script>
 </head>
 
 <body>
-    <div style="color:red;font-size:50px;">
-        <h3>Menu</h3>
-        <p>1 - Czerwony</p>
-        <p>2 - Niebieski</p>
+    <div >
+        <h1 style="color: green;">Menu</h3>
+        <h2 style="color: red;">1 - Czerwony</h2>
+        <h2 style="color: blue;">2 - Niebieski</h2>
         <input type="text" id="txt" >
         <input type="button" value="enter" onclick="check()">
         
