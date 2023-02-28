@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x_min = +prompt("enter x_min");
+        let x_max = +prompt("enter x_max");
+        let y_min = +prompt("enter y_min");
+        let y_max = +prompt("enter y_max");
+        if(x_min>x_max)
+            [x_min,x_max]=[x_max,x_min];
+        if(y_min>y_max)
+            [y_min,y_max]=[y_max,y_min];
+        let ar=[];
+        for(let x = x_min;x<=x_max;x++)
+        {
+            for(let y=y_min; y<=y_max;y++)
+            {
+                document.write(`(${x};${y}) `);
+                let n = +Math.sqrt((Math.pow(x,2)+Math.pow(y,2))).toFixed(2);
+                ar.push(n);
+            }
+            document.write("<br>");
+        }
+        console.log(Math.max.apply(null,ar));
+        alert(`d = ${Math.max.apply(null,ar)}`);
+        document.write(`<h1>d = ${Math.max.apply(null,ar)}</h1>`);
+    </script>
+</body>
+</html>
